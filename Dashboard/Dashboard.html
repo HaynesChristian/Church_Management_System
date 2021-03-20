@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DashBoard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="DashBoard.js"></script>
+	<link rel="stylesheet" href="DashBoard.css" />
+	<script>
+            history.pushState(null, null, location.href);
+            window.onpopstate = function () 
+            {
+                history.go(1);
+            };
+        </script>
+</head>
+<body onload="startTime()">
+	<div class="backgrd">
+		<div class="topnavbar">
+			<button onclick="member_detail()" class="navbutton" style="margin-left: 50px">Member Details</button>
+			<button onclick="" class="navbutton">Income & Expense</button>
+			<button onclick="suppliers()" class="navbutton">Suppliers</button>
+			<button onclick="" class="navbutton">Sunday School</button>
+			<button onclick="" class="navbutton">Document Storage</button>
+			<button onclick="" class="navbutton">Certificate Formats</button>
+			<button onclick="" class=" dropdown-toggle navbutton" data-toggle="dropdown">Settings</button>
+			<div class="dropdown-menu">
+				<a onclick="" class="dropdown-item" href="#">Change Password</a>
+				<a class="dropdown-item" href="#">Log out</a>
+			</div>
+
+			<svg  id="lc" width="400" height="250" class="mysvg">
+				<!-- left cover -->
+				<rect x="170" y="70" rx="10" ry="15" width="10" height="180" style="fill: brown; stroke-width:1; stroke: brown">
+					<animate attributeName="x" attributeType="XML" begin="0s" dur="5s" fill="freeze" from="170" to="0"/>
+					<animate attributeName="y" attributeType="XML" begin="0s" dur="5s" fill="freeze" from="70" to="240"/>
+
+					<animate attributeName="width" attributeType="XML" begin="0s" dur="5s" fill="freeze" from="10" to="180"/>
+					<animate attributeName="height" attributeType="XML" begin="0s" dur="5s" fill="freeze" from="180" to="10"/>
+				</rect>
+				<!-- left page bundle-->
+				<rect x="180" y="70" width="10" height="180" style="fill: white; stroke-width:0.5; stroke: gray" />
+
+				<!-- right page bundle -->
+				<rect x="190" y="70" width="10" height="180" style="fill: white; stroke-width:0.5; stroke: gray" />
+				<!-- right cover-->
+				<rect x="200" y="70" rx="10" ry="15" width="10" height="180" style="fill: brown; stroke-width:1; stroke: brown" />
+
+				<!-- bottom part -->
+				<rect x="170" y="240" rx="10" ry="15" width="40" height="10" style="fill: brown; stroke-width:1; stroke: brown" />
+			</svg>
+		</div>
+	</div>
+
+	<div class="time_cal">
+		<div class="time">
+			<u>Time</u><br/>
+			<span>Hr : Min : Sec</span>
+			<p id="time"></p>
+		</div>
+		<div class="cal">
+			Calendar
+		</div>
+	</div>
+
+	<div class="for_page">
+		<iframe height="100%" id="content" class="for_page"> </iframe>
+	</div>
+</body>
+</html>

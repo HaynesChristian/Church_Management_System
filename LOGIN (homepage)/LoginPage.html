@@ -1,0 +1,140 @@
+<html>
+<head>
+	<title>LOGIN</title>
+	<link rel="icon" type="image/png" href="cni_symbol.jpg">
+	<link rel="stylesheet" type="text/css" href="LoginPage.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body style="margin: 0px">
+
+	<div class="bgimg"></div>
+
+	<div class="title">
+		<h2>CNI ST.JAMES CHURCH</h2>
+	</div>
+	
+	<div style="left: 60px; top: 130px;" class="text">
+		<p>
+			The Lord is my shepherd, I lack nothing.<br>
+			He makes me lie down in green pastures.<br>
+			He leads me beside still waters.He restores my soul.<br>
+			He leads me in paths of righteousness for his name’s sake.<br>
+			Even though I walk through the valley of the shadow of death,I will fear no evil, for you are with me; <br>
+			your rod and your staff, they comfort me.<br>
+		</p>
+	</div>
+
+	<div style="right: 60px; top: 130px;" class="text">
+		<p>
+			I lift up my eyes to the hills.<br>
+			From where does my help come?<br>
+			My help comes from the Lord,<br>
+			who made heaven and earth.<br>
+			He will not let your foot be moved; <br>
+			he who keeps you will not slumber.<br>
+			Behold, he who keeps Israel will neither slumber nor sleep.<br>
+			The Lord is your keeper; <br>
+		</p>
+	</div>
+
+	<!--
+	<div style="top: 80; left: 20" class="neon">
+			The Lord is my shepherd; I shall not want.
+	</div>
+	
+
+	<div style="top: 120; right: 20" class="scroll_RTF neon">
+		He makes me lie down in green pastures.
+	</div>
+
+	<div style="top: 180; left: 20" class="neon">
+		He leads me beside still waters.He restores my soul.
+	</div>
+
+	<div style="top: 220; right: 20" class="scroll_RTF neon">
+		He leads me in paths of righteousness for his name’s sake.
+	</div>
+
+	<div style="top: 280; left: 20" class="neon">
+		Even though I walk through the valley of the shadow of death,  
+	</div>
+
+	<div style="top: 320; right: 20" class="scroll_RTF neon">
+		I will fear no evil, for you are with me; 
+	</div>
+
+	<div style="top: 380; left: 20" class="neon">
+		your rod and your staff, they comfort me.
+	</div>
+
+	<div style="top: 420; right: 20" class="scroll_RTF neon">
+		You prepare a table before me in the presence of my enemies;
+	</div>
+
+	<div style="top: 480; left: 20" class="neon">
+		you anoint my head with oil; my cup overflows.
+	</div>
+
+	<div style="top: 520; right: 20" class="scroll_RTF neon">
+		Surely goodness and mercy shall follow me all the days of my life,
+	</div>
+
+	<div style="top: 580; left: 20" class="neon">
+		and I shall dwell in the house of the Lord forever.
+	</div>
+-->
+
+	<div id="id01" class="modal">
+		<form class="modal-content animate">
+			<div class="imgcontainer">
+				<div class="symbol_img">
+					<img style="height: 110px" src="cni_symbol.jpg" />
+				</div>
+			</div>
+
+			<div class="container">
+				<label for="uname"><b>Username</b></label>
+				<br/>
+				<input id="usrnm" type="text" placeholder="Username" name="uname" required>
+				<br/>
+				<label for="psw"><b>Password</b></label>
+				<br/>
+				<input id="pswd" type="password" placeholder="Password" name="psw" required>
+				<br/>
+				<button type="submit" class="buttonlogin">Login</button>
+				<br/>
+					<label>
+						<input type="checkbox" name="remember"> Remember me
+					</label>
+				</div>
+
+				<div class="container2">
+					<!--for making it a cancel button
+						apply this {onclick="document.getElementById('id01').style.display='none'"}
+						and make it type="button"
+					-->
+					<button type="Reset" class="cancelbtn">Reset</button>
+					<span class="psw"><a href="#">Forgot password?</a></span>
+				</div>
+		</form>
+	</div>
+
+	<script>
+
+		var modal = document.getElementById('id01');
+		window.onload = function()
+			{
+					modal.style.display = "block";
+			}
+	//Function for clicking outside form to close it
+	/*		window.onclick = function(event)
+			{
+   				if (event.target == modal)
+  					{
+       					modal.style.display = "none";
+    				}
+			}
+	*/
+	</script>
+</body>
+</html>

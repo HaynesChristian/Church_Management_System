@@ -1,0 +1,96 @@
+.backgrd
+{
+	background-color: gray;
+	height: 480px;
+	width: 1376px;
+	margin: -10px;
+	clip-path: polygon( 0 0, 100% 0, 100% 100%, 0 calc(100% - 5vw) );
+}
+
+.topnavbar
+{
+	width: 1200px;
+	height: 60px;
+	border-radius: 50px;
+	position: absolute;
+	margin: 50px 80px;
+	background-color: white;
+}
+
+.navbutton
+{
+	height: 60px;
+	width: 155px;
+	border-radius: 10px;
+	background-color: white;
+	color: red;
+	cursor: pointer;
+	margin-left:-5px;
+	position: relative;
+	border: none;
+}
+.navbutton:hover
+{
+	background-color: red;
+	color: white;
+}
+
+.mysvg
+{
+	background-color: gray;	
+	margin-top: 30px;
+	margin-left: 400px;
+}
+.time_cal
+{
+	height: 300px;
+	width: 1376px;
+	margin: -10px;
+	font-size: 30px;
+}
+
+.time
+{
+	background-color: maroon;
+	height: 150px;
+	width: 300px;
+	border-radius: 20px;
+	margin-left: 350px;
+	text-align: center;
+	color: white;
+}
+
+.cal
+{
+	background-color: slategray;
+	height: 200px;
+	width: 300px;
+	margin-top: -150px;
+	margin-left: 700px;
+	text-align: center;
+	color: white;	
+}
+
+.for_page
+{
+	background-color: gray;
+	height: 500px;
+	width: 1376px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
